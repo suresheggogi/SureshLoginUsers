@@ -1,0 +1,125 @@
+
+.body{
+    margin: 0;
+    padding: 0;
+    font-family: "Sofia", sans-serif;
+}
+.signup-login{
+   background-color:  #0f1f37;
+   width: 100%;
+   min-height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
+}
+
+.signup-box{
+    margin-top: 20px;
+    background-color:#ffffff30;
+    height: auto;
+    width: 90%;
+    max-width: 520px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    padding: 20px;
+    box-sizing: border-box;
+}
+.heading{
+    font-size: x-large;
+    font-weight: 600;
+    padding: 50px;
+    text-align: center;
+    color: white;
+    margin: 0;
+    padding: 0%;
+   
+    margin-top: 50px;
+}
+.Line{
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border: 1px solid white;
+}
+ b{
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 10px;
+    padding: 0;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+.inp{
+    margin: 10px 0;
+    height: 40px;
+    width: 100%;
+    border-radius: 10px;
+    background-color:  #ffffff30;
+    font-size: 15px;
+    font-weight: 500;
+    color: #e4d7d7;
+    border: 2px solid rgba(208, 187, 187, 0.5);
+    box-sizing: border-box;
+}
+.inp::placeholder{
+   color: #8f8a8aa5;
+}
+.Field{
+
+    color: white;
+    font-size: large;
+    margin: 20px 0;
+    font-weight: bold;
+}
+.anc{
+    text-decoration: none;
+    text-align:  center;
+    color: #ffff00bc;
+    margin-top: 20px;
+    display: block;
+    cursor: pointer;
+}  
+.submit-button{
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+    border-radius: 10px;
+    background-color:  #252525;
+    color: white;
+    border-color: white;
+    box-sizing: border-box;
+} 
+.submit-button:hover{
+    background-color: #ffff00bc;
+    color: #fff;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .signup-box {
+        width: 95%;
+        padding: 15px;
+    }
+    
+    .heading {
+        font-size: medium;
+        margin-top: 20px;
+    }
+    
+    b {
+        font-size: 18px;
+    }
+    
+    .inp {
+        height: 45px;
+        font-size: 16px; /* Prevents zoom on iOS */
+    }
+    
+    .submit-button {
+        padding: 12px;
+        font-size: 16px;
+    }
+}

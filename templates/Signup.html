@@ -1,0 +1,52 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, width=device-width">
+        <link rel="stylesheet" type=text/css href="{% static 'css/index.css' %}">
+        
+           
+    </head>
+
+    <body>
+        
+        <div class="signup-login">
+                <div class="signup-box">
+                    <form action="../writefile" method="GET">
+                        {% csrf_token %}
+                        <div class="heading">SignUP </div>
+                        <div class="Line"></div>
+                        <div class="Field">
+                            <b>Username</b>
+                            <input class="inp" type="text" name="fnm" required placeholder="Enter Your Full Name">
+                        </div>
+
+                        <div class="Field">
+                            <b>Email</b><br>
+                            <input class="inp" type="email" name="email" required placeholder="Enter Your User Name">
+                        </div>
+
+                        <div class="Field">
+                            <b>Passward</b><br>
+                            <input class="inp" type="password" name="pwd" required placeholder="Enter Your password Name">
+                       </div>
+
+                      <div class="Field">
+                        <input class="submit-button " type="Submit">
+                      </div>
+
+                      <div class="Line "></div>
+
+                      <div class="Field">
+                        <b style="margin-left: 150px;"> Already have an account ?</b><br>
+                        <a class="anc" href="/Login">Login</a>
+                      </div>
+                    </form>
+                </div>
+            </div>
+           
+        </div>
+
+    </body>
+</html>
